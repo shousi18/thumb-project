@@ -7,11 +7,9 @@ import com.shousi.thumbweb.constant.RedisLuaScriptConstant;
 import com.shousi.thumbweb.constant.ThumbConstant;
 import com.shousi.thumbweb.mapper.ThumbMapper;
 import com.shousi.thumbweb.model.dto.thumb.DoThumbRequest;
-import com.shousi.thumbweb.model.entity.Blog;
 import com.shousi.thumbweb.model.entity.Thumb;
 import com.shousi.thumbweb.model.entity.User;
 import com.shousi.thumbweb.model.enums.LuaStatusEnum;
-import com.shousi.thumbweb.service.BlogService;
 import com.shousi.thumbweb.service.ThumbService;
 import com.shousi.thumbweb.service.UserService;
 import com.shousi.thumbweb.util.RedisKeyUtil;
@@ -20,7 +18,6 @@ import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.support.TransactionTemplate;
 
 import java.util.Arrays;
 
@@ -29,7 +26,7 @@ import java.util.Arrays;
  * @description 针对表【thumb】的数据库操作Service实现
  * @createDate 2025-04-20 21:08:45
  */
-@Service("thumbService")
+@Service("thumbServiceRedis")
 @Slf4j
 public class ThumbRedisServiceImpl extends ServiceImpl<ThumbMapper, Thumb>
         implements ThumbService {

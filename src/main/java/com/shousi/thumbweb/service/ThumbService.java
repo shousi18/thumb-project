@@ -1,8 +1,8 @@
 package com.shousi.thumbweb.service;
 
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.shousi.thumbweb.model.dto.thumb.DoThumbRequest;
 import com.shousi.thumbweb.model.entity.Thumb;
-import com.baomidou.mybatisplus.extension.service.IService;
 import jakarta.servlet.http.HttpServletRequest;
 
 /**

@@ -2,9 +2,9 @@ package com.shousi.thumbweb.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.shousi.thumbweb.constant.UserConstant;
+import com.shousi.thumbweb.mapper.UserMapper;
 import com.shousi.thumbweb.model.entity.User;
 import com.shousi.thumbweb.service.UserService;
-import com.shousi.thumbweb.mapper.UserMapper;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Service;
 

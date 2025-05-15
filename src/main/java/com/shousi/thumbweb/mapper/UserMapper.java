@@ -1,7 +1,7 @@
 package com.shousi.thumbweb.mapper;
 
-import com.shousi.thumbweb.model.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.shousi.thumbweb.model.entity.User;
 
 /**
 * @author 86172
